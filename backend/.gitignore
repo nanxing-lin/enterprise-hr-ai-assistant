@@ -1,0 +1,13 @@
+# 忽略前端依赖包
+node_modules/
+dist/
+
+# 忽略后端虚拟环境
+venv/
+
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略环境变量文件
+.env
