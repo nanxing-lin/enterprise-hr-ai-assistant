@@ -17,8 +17,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ⚠️ 换成你的真实 DeepSeek API Key
-API_KEY = "sk-请输入你真实的api"
+# 修改后的代码（安全）：
+import os
+API_KEY = os.getenv("LLM_API_KEY", "本地测试如果没有配置会报错")
 
 # 全局变量，暂存当前用户的数据
 current_df = None
